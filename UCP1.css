@@ -1,0 +1,114 @@
+*, html {
+    padding: 10;
+    margin: 10;
+    box-sizing: boeder border-box;
+}
+nav {
+    background-color: blanchedalmond;
+    position: sticky;
+    top: 0;
+    color:blue;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: beige;
+}
+
+header {
+    background-color: #fff2e8;
+    padding: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.greeting {
+    font-size: 18 px;
+    text-align: center;
+}
+
+.datetime {
+    text-align: right;
+}
+
+.carousel {
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 25%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img:not(:first-child) {
+    margin-left: -50%;
+}
+
+.carousel.slide img {
+    transform: translateX(-100%);
+}
+
+.card {
+    width: 300px;
+    border: black;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.card img {
+    width: 25%;
+    height: auto;
+}
+
+.card .content {
+    padding: 20px;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 30 px 0;
+}
+
+.card .footer {
+    background-color: burlywood;
+    padding: 20px;
+
+}
+
+.card .footer {
+    margin: 0;
+}
+
+.card .footer .date{
+    font-weight: bold;
+
+}
+
+.card .footer .read-more {
+    text-decoration: none;
+    color: #333;
+}
